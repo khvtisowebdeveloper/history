@@ -1,37 +1,83 @@
 body{
     position: relative;
     background-color: rgb(63, 63, 63);
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Noto Sans Georgian', sans-serif;
     font-size: 16px;
     color: rgb(255, 255, 255);
     
 }
-.text-item-link{
-    font-family: system-ui, -apple-system,
-     BlinkMacSystemFont, 'Segoe UI',
-      Roboto, Oxygen, Ubuntu, Cantarell, 
-      'Open Sans', 'Helvetica Neue', sans-serif;
-      color: rgb(255, 255, 255);
-      text-decoration: none;
-      margin: 0px;
-      padding: 0px;
-      top: 0%;
-      left: 0%;
-      right: 0%;
-      bottom: 0%;
-      
-      
+.container .header{
+    position: absolute;
+    z-index: 9999;
+    text-align: center;
+    left: 210px;
+    font-size: 20px;
+    min-height: 50px;
+    
+    
+
 }
-.text-item{
-    width: 200px;
-      height: 500px;
-      border: 4px solid black;
-      padding: 5px;
-      position: absolute;
-      z-index: 9999;
-      
-      
+.container .header ul{
+    display:inline-flex ;
+    list-style: none;
+    color: white;
+    
 }
+.container .header ul li{
+    
+    margin: 15px;
+    padding: -5px;
+    
+}
+.container .header ul li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    justify-content: center;
+}
+
+.links .container .header ul li:hover{
+    background: transparent;
+    border-radius: 3px;
+}
+.container .header .fa{
+    margin-left: 8px;
+}
+.list{
+    display:none;
+
+}
+.container .header ul li:hover .list{
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.container .header ul li:hover .list ul{
+    display: block;
+    margin: 10px;
+}
+.container .header ul li:hover .list ul li{
+    width: 150px;
+    border-bottom: 1px dotted transparent;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.container .header ul li:hover .list ul li:last-child{
+    border-bottom: none;
+}
+.container{
+    z-index: 9999;
+    position: absolute;
+    color: rgb(148, 148, 148);
+    border-radius: 3px;
+    padding: 15px 15px;
+
+}
+    
+
 .intro{
     position: relative;
     height: 100vh;
